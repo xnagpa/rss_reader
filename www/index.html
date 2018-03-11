@@ -39,22 +39,22 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+    <title>RSS Reader</title>
 </head>
 
 <body>
     <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
+        <h1>RSS READER</h1>
+        <div id="content-control">
+          <input class="rss-input" type='text' placeholder="Paste RSS address here" />
+          <button>PARSE NEW RSS</button>
+        </div>
+        <br/>
+        <div id="rss">  
         </div>
     </div>
     <script type="text/javascript" src="cordova.js"></script>
     <script src="js/dist/bundle.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
 </body>
 
 </html>
